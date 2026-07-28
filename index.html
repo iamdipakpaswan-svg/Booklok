@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklok - आपकी फंकी बुक्स वर्ल्ड</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <svg id="booklok-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <path d="M15 15h70v70H15z" fill="none" stroke="#00ffff" stroke-width="4"/>
+            <path d="M30 30h40v40H30z" fill="#ff00ff"/>
+            <text x="15" y="95" font-family="'Press Start 2P', cursive" font-size="12" fill="#00ffff">BOOKLOK</text>
+        </svg>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">होम</a></li>
+            <li><a href="shop.html">शॉप</a></li>
+            <li><a href="library.html">लाइब्रेरी</a></li>
+        </ul>
+    </nav>
+    <div class="actions">
+        <button class="btn btn-search"><i class="pixel-icon">Q</i></button>
+        <button class="btn btn-cart"><i class="pixel-icon">🛒</i></button>
+        <button class="btn btn-user"><i class="pixel-icon">🧑</i></button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <img src="booklok_hero.webp" alt="नियॉन पुस्तकालय में एक जेंजी चरित्र" class="hero-image">
+        <div class="hero-content">
+            <h1>डिजिटल सपनों में<br>खो जाओ</h1>
+            <p>फिजिकल बुक्स और ई-बुक्स का एक फंकी कॉम्बिनेशन, बस एक क्लिक की दूरी पर।</p>
+            <a href="shop.html" class="btn-cta">Explore the LOK</a>
+        </div>
+    </section>
+
+    <section class="featured-lok">
+        <h2>🔥 ट्रेंडिंग नाउ</h2>
+        <div class="book-grid">
+            <a href="book.html" class="book-card p-book">
+                <img src="booklok_cover1.webp" alt="NEON DREAMS बुक कवर">
+                <div class="book-info">
+                    <h3>Neon Dreams</h3>
+                    <p class="author">साइबरपंक क्लासिक</p>
+                    <span class="tag tag-p">फिजिकल</span>
+                </div>
+            </a>
+            <a href="book.html" class="book-card e-book">
+                <img src="booklok_cover3.webp" alt="PIXEL JOURNEYS बुक कवर">
+                <div class="book-info">
+                    <h3>Pixel Journeys</h3>
+                    <p class="author">अमूर्त ई-बुक</p>
+                    <span class="tag tag-e">ई-बुक</span>
+                </div>
+            </a>
+            <a href="book.html" class="book-card p-book">
+                <img src="booklok_cover2.webp" alt="OLDE MYSTERIES बुक कवर">
+                <div class="book-info">
+                    <h3>Olde Mysteries</h3>
+                    <p class="author">पुराना क्लासिक</p>
+                    <span class="tag tag-p">फिजिकल</span>
+                </div>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Booklok - फंकी जेंजी लाइब्रेरी</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
