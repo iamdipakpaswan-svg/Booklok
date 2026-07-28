@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <!-- ... वही हेड सेक्शन index.html से ... -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <!-- ... वही हेडर index.html से ... -->
+</header>
+
+<main class="container-book">
+    <section class="book-details">
+        <div class="book-cover-large">
+            <img src="booklok_cover1.webp" alt="Neon Dreams">
+        </div>
+        <div class="book-meta">
+            <h1>Neon Dreams</h1>
+            <p class="author">साइबरपंक क्लासिक</p>
+            <p class="description">यह एक ऐसी कहानी है जो आपको नियॉन लाइटों और डिजिटल दुनिया में ले जाएगी। एक ऐसी कहानी जो आपकी नींद उड़ा देगी।</p>
+            <div class="buy-options">
+                <button class="btn-buy p-buy">₹1299 <i class="pixel-icon">🛒</i> फिजिकल</button>
+                <button class="btn-buy e-add">₹199 <i class="pixel-icon">📚</i> ई-बुक</button>
+                <button class="btn-buy combo-buy">₹1399 <i class="pixel-icon">💎</i> कॉम्बो</button>
+            </div>
+            <button class="btn-read" onclick="openReader()">ऑनलाइन पढ़ें (फ्री डेमो)</button>
+        </div>
+    </section>
+</main>
+
+<!-- ऑनलाइन रीडर मोडल -->
+<div id="reader-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeReader()">&times;</span>
+        <h2>Neon Dreams: प्रस्तावना</h2>
+        <div class="reader-text">
+            <p>नियॉन सपनों की दुनिया में, जहाँ हर कोई एक कोडर है और हर कोडर एक नायक है। शहर की धुंध में, एक आवाज़ गूंजी... "क्या तुम तैयार हो?" यह सिर्फ एक शुरुआत थी।</p>
+            <p>अध्याय 1 शुरू होता है। (यहाँ और टेक्स्ट आ सकता है)</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <!-- ... वही फुटर index.html से ... -->
+</footer>
+
+<script src="script.js"></script>
+<script>
+    // ऑनलाइन रीडर फ़ंक्शन
+    function openReader() {
+        document.getElementById("reader-modal").style.display = "block";
+    }
+    function closeReader() {
+        document.getElementById("reader-modal").style.display = "none";
+    }
+    // मोडल बंद करें अगर उपयोगकर्ता बाहर क्लिक करे
+    window.onclick = function(event) {
+        let modal = document.getElementById("reader-modal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
