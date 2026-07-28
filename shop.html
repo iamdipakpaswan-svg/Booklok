@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <!-- ... वही हेड सेक्शन index.html से ... -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <!-- ... वही हेडर index.html से ... -->
+</header>
+
+<main class="container-shop">
+    <div class="filter-sidebar">
+        <h3>🔎 खोजें</h3>
+        <input type="text" placeholder="किताब का नाम">
+        <h3>📂 श्रेणियाँ</h3>
+        <ul>
+            <li><button class="active">सब</button></li>
+            <li><button>फिजिकल</button></li>
+            <li><button>ई-बुक</button></li>
+        </ul>
+        <button class="btn btn-filter">फिल्टर करें</button>
+    </div>
+
+    <section class="catalogue">
+        <h2>🛍️ किताबों की दुनिया</h2>
+        <div class="book-grid">
+            <a href="book.html" class="book-card p-book">
+                <img src="booklok_cover1.webp" alt="Neon Dreams">
+                <div class="book-info"><h3>Neon Dreams</h3><span class="price">₹1299</span><span class="tag tag-p">फिजिकल</span></div>
+            </a>
+            <a href="book.html" class="book-card e-book">
+                <img src="booklok_cover3.webp" alt="Pixel Journeys">
+                <div class="book-info"><h3>Pixel Journeys</h3><span class="price">₹199</span><span class="tag tag-e">ई-बुक</span></div>
+            </a>
+            <a href="book.html" class="book-card p-book">
+                <img src="booklok_cover2.webp" alt="Olde Mysteries">
+                <div class="book-info"><h3>Olde Mysteries</h3><span class="price">₹999</span><span class="tag tag-p">फिजिकल</span></div>
+            </a>
+            <a href="book.html" class="book-card combination">
+                <img src="booklok_cover1.webp" alt="Neon Dreams + Pixel Journeys">
+                <div class="book-info"><h3>Neon Bundle</h3><span class="price">₹1399</span><span class="tag tag-combo">कॉम्बो</span></div>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <!-- ... वही फुटर index.html से ... -->
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
